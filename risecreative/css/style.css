@@ -1318,8 +1318,8 @@ body {
     flex-basis: 49.0625%
   }
   .about__section-header .section-header__label {
-    -webkit-transform: translateX(120%);
-    transform: translateX(120%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
     transition: all .8s;
     opacity: 0
   }
@@ -1329,8 +1329,8 @@ body {
     opacity: 1
   }
   .about__section-header .section-header__title {
-    -webkit-transform: translateX(120%);
-    transform: translateX(120%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
     transition: all .8s .5s;
     opacity: 0
   }
@@ -1340,8 +1340,8 @@ body {
     opacity: 1
   }
   .about__section-header .section-header__text {
-    -webkit-transform: translateX(120%);
-    transform: translateX(120%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
     transition: all .8s 1s;
     opacity: 0
   }
@@ -1351,8 +1351,8 @@ body {
     opacity: 1
   }
   .about__section-header .section-header__button {
-    -webkit-transform: translateX(120%);
-    transform: translateX(120%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
     transition: all .8s 1.5s;
     opacity: 0
   }
@@ -1375,8 +1375,8 @@ body {
     opacity: 1
   }
   .choos__section-header .section-header__label {
-    -webkit-transform: translateX(-120%);
-    transform: translateX(-120%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     transition: all .8s;
     opacity: 0
   }
@@ -1386,8 +1386,8 @@ body {
     opacity: 1
   }
   .choos__section-header .section-header__title {
-    -webkit-transform: translateX(-120%);
-    transform: translateX(-120%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     transition: all .8s .5s;
     opacity: 0
   }
@@ -1397,8 +1397,8 @@ body {
     opacity: 1
   }
   .choos__section-header .section-header__text {
-    -webkit-transform: translateX(-120%);
-    transform: translateX(-120%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     transition: all .8s 1s;
     opacity: 0
   }
@@ -1452,8 +1452,8 @@ body {
     opacity: 1
   }
   .portfolio__section-header .section-header__label {
-    -webkit-transform: translateX(-120%);
-    transform: translateX(-120%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     transition: all .8s;
     opacity: 0
   }
@@ -1463,8 +1463,8 @@ body {
     opacity: 1
   }
   .portfolio__section-header .section-header__title {
-    -webkit-transform: translateX(-120%);
-    transform: translateX(-120%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     transition: all .8s .5s;
     opacity: 0
   }

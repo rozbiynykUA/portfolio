@@ -807,12 +807,8 @@ body {
 }
 .quality__icon {
   width: 4.25rem;
-  aspect-ratio: 1/1;
   padding: 1.125rem;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #24272e
 }
 .quality__icon img {

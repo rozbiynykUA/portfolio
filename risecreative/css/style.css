@@ -382,10 +382,12 @@ body {
   transition: all .3s
 }
 .header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: .9375rem
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center
+}
+.header__actions {
+  justify-self: end
 }
 ._header-scroll {
   background-color: rgba(16,28,38,.8)
@@ -393,10 +395,7 @@ body {
 .logo {
   position: relative;
   z-index: 5;
-  display: flex;
-  min-height: auto;
-  max-width: 6.0625rem;
-  flex-basis: 16.875rem;
+  width: 6.0625rem;
   aspect-ratio: 97/67
 }
 .logo__image {
@@ -410,6 +409,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: .625rem 2.5rem
+}
+.menu .button-menu {
+  display: none
 }
 .menu__link {
   color: #bab9b9;
@@ -1206,6 +1208,9 @@ body {
   .header {
     padding-block: 1.75rem
   }
+  .header__container {
+    gap: .9375rem
+  }
   .footer {
     padding-top: 4.875rem
   }
@@ -1653,6 +1658,9 @@ body {
   .header {
     padding-block: .9375rem
   }
+  .header__container {
+    gap: .3125rem
+  }
   .footer {
     padding-top: 2.1875rem
   }
@@ -1671,7 +1679,7 @@ body {
     gap: .3125rem
   }
   .hero {
-    padding-top: 8.75rem
+    padding-top: 5.625rem
   }
   .hero {
     padding-bottom: .9375rem
@@ -1864,6 +1872,14 @@ body {
     flex-basis: 100%
   }
 }
+@media (max-width:61.99875em) {
+  .header__container {
+    grid-template-columns: auto 1fr auto
+  }
+  .header__menu {
+    justify-items: center
+  }
+}
 @media (max-width:52.49875em) {
   .contacts {
     padding-top: 0
@@ -1962,6 +1978,12 @@ body {
     grid-template-columns: auto 1fr;
     grid-auto-flow: column
   }
+  .header__actions {
+    order: 2
+  }
+  .header__icon {
+    order: 3
+  }
   .spollers {
     flex-direction: column
   }
@@ -2000,16 +2022,21 @@ body {
     justify-content: center
   }
   .header__container {
-    grid-template-columns: auto auto auto;
-    grid-auto-flow: row;
+    grid-template-columns: auto;
     row-gap: .5rem
   }
+  .header__actions {
+    order: 3
+  }
   .header__icon {
-    order: 3;
+    order: 6;
     justify-self: end
   }
   .logo {
     max-width: 50%
+  }
+  .menu .button-menu {
+    display: block
   }
   .actions {
     order: 4;
@@ -2019,6 +2046,9 @@ body {
   .actions__button {
     flex-grow: 1;
     text-align: center
+  }
+  .actions__button:first-child {
+    display: none
   }
   .hero__content:not(:last-child) {
     margin-bottom: 1.875rem
@@ -2060,6 +2090,9 @@ body {
   .header {
     padding-block: clamp(.9375rem ,.6748737374rem + 1.3131313131vw ,1.75rem)
   }
+  .header__container {
+    gap: clamp(.3125rem ,.110479798rem + 1.0101010101vw ,.9375rem)
+  }
   .footer {
     padding-top: clamp(2.1875rem ,1.3188131313rem + 4.3434343434vw ,4.875rem)
   }
@@ -2078,7 +2111,7 @@ body {
     gap: clamp(.3125rem ,.0902777778rem + 1.1111111111vw ,1rem)
   }
   .hero {
-    padding-top: clamp(8.75rem ,7.1338383838rem + 8.0808080808vw ,13.75rem)
+    padding-top: clamp(5.625rem ,2.9987373737rem + 13.1313131313vw ,13.75rem)
   }
   .hero {
     padding-bottom: clamp(.9375rem ,-.0119949495rem + 4.7474747475vw ,3.875rem)

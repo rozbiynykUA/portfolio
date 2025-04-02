@@ -810,13 +810,10 @@ body {
   aspect-ratio: 1/1;
   padding: 1.125rem;
   border-radius: 50%;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  background-color: #24272e;
-  color: #f0e714;
-  font-size: 2rem
+  background-color: #24272e
 }
 .quality__icon img {
   width: 100%;
@@ -1288,9 +1285,6 @@ body {
     -moz-column-gap: 1.5rem;
     column-gap: 1.5rem
   }
-  .quality__icon {
-    font-size: 2rem
-  }
   .quality__title {
     font-size: 1.25rem
   }
@@ -1738,9 +1732,6 @@ body {
     -moz-column-gap: .9375rem;
     column-gap: .9375rem
   }
-  .quality__icon {
-    font-size: 1.25rem
-  }
   .quality__title {
     font-size: 1.125rem
   }
@@ -2169,9 +2160,6 @@ body {
     -webkit-column-gap: clamp(.9375rem ,.7556818182rem + .9090909091vw ,1.5rem);
     -moz-column-gap: clamp(.9375rem ,.7556818182rem + .9090909091vw ,1.5rem);
     column-gap: clamp(.9375rem ,.7556818182rem + .9090909091vw ,1.5rem)
-  }
-  .quality__icon {
-    font-size: clamp(1.25rem ,1.0075757576rem + 1.2121212121vw ,2rem)
   }
   .quality__title {
     font-size: clamp(1.125rem ,1.0845959596rem + .202020202vw ,1.25rem)

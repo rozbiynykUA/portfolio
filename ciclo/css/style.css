@@ -1079,13 +1079,10 @@ body {
   }
   .page__section::after {
     top: 1.25rem;
-    right: 50%;
-    -webkit-right: 50%
+    right: 50%
   }
   .screen-01__container {
-    -webkit-padding-left: 0;
     padding-left: 0;
-    -webkit-padding-right: 0;
     padding-right: 0
   }
   .screen-01__body {

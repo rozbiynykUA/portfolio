@@ -366,6 +366,9 @@ body {
   -o-object-fit: cover;
   object-fit: cover
 }
+.screen-03__container {
+  height: 100svh
+}
 .screen-03__content {
   flex: 0 1 50%;
   align-self: center;
@@ -374,10 +377,14 @@ body {
 }
 .screen-03__image {
   flex: 0 1 50%;
-  position: relative
+  position: relative;
+  aspect-ratio: 720/1080
 }
 .screen-03__image img {
-  max-width: 100%
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .values-screen-03 {
   display: grid
@@ -694,35 +701,6 @@ body {
   .section-header__title:not(:last-child) {
     margin-bottom: 2.2em
   }
-  .screen-02__container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit,minmax(40%,1fr))
-  }
-  .screen-02__content {
-    padding-right: 1.25rem;
-    padding-bottom: 3.125rem
-  }
-  .screen-03__container {
-    min-height: 100%;
-    display: flex;
-    flex-direction: row-reverse
-  }
-  .screen-03__content {
-    padding-bottom: 3.125rem
-  }
-  .screen-03__image {
-    padding-right: 1.25rem
-  }
-  .screen-03__image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover
-  }
   .screen-05__container {
     min-height: 100%;
     display: flex
@@ -767,9 +745,6 @@ body {
   }
 }
 @media (min-width:47.99875em)and (min-width:120em) {
-  .screen-03__image {
-    left: -15rem
-  }
   .screen-07__image {
     right: -15rem
   }
@@ -801,6 +776,43 @@ body {
     margin-bottom: 0;
     -webkit-margin-after: 1.28em;
     margin-block-end: 1.28em
+  }
+}
+@media (min-width:48em) {
+  .screen-02__container {
+    display: grid;
+    width: 100%;
+    height: 100svh;
+    grid-template-columns: repeat(auto-fit,minmax(40%,1fr))
+  }
+  .screen-02__content {
+    padding-right: 1.25rem;
+    padding-bottom: 3.125rem
+  }
+  .screen-03__container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: row-reverse
+  }
+  .screen-03__content {
+    padding-bottom: 3.125rem
+  }
+  .screen-03__image {
+    padding-right: 1.25rem
+  }
+  .screen-03__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+  }
+}
+@media (min-width:48em)and (min-width:120em) {
+  .screen-03__image {
+    left: -15rem
   }
 }
 @media (min-width:120em) {
@@ -1067,6 +1079,7 @@ body {
     flex: 0 0 1.5625rem
   }
   .page__section::after {
+    position: absolute;
     top: 1.25rem;
     right: 50%
   }
@@ -1291,18 +1304,22 @@ body {
     padding-right: clamp(-15rem ,1.875rem + -14.0625vw ,-.9375rem)
   }
 }
-@media (min-width:47.99875em)and (min-width:20em)and (max-width:120em) {
+@media (min-width:48em)and (min-width:20em)and (max-width:120em) {
   .screen-03__image {
     left: clamp(-15rem ,1.875rem + -14.0625vw ,-.9375rem)
   }
+}
+@media (min-width:48em)and (max-width:20em) {
+  .screen-03__image {
+    left: -.9375rem
+  }
+}
+@media (min-width:47.99875em)and (min-width:20em)and (max-width:120em) {
   .screen-07__image {
     right: clamp(-15rem ,1.875rem + -14.0625vw ,-.9375rem)
   }
 }
 @media (min-width:47.99875em)and (max-width:20em) {
-  .screen-03__image {
-    left: -.9375rem
-  }
   .screen-07__image {
     right: -.9375rem
   }

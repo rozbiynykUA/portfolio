@@ -1081,7 +1081,10 @@ body {
   .page__section::after {
     position: absolute;
     top: 1.25rem;
-    right: 50%
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    text-align: center
   }
   .screen-01__container {
     align-items: stretch

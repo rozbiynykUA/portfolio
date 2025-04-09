@@ -323,7 +323,6 @@ body {
 }
 .screen-01__container {
   min-height: 100%;
-  width: 100%;
   display: grid;
   align-items: center
 }
@@ -354,13 +353,11 @@ body {
   object-fit: cover
 }
 .screen-02__content {
-  flex: 0 1 50%;
-  align-self: center;
   padding-top: 3.125rem;
   padding-bottom: 1.875rem
 }
 .screen-02__image {
-  flex: 0 1 50%
+  aspect-ratio: 720/840
 }
 .screen-02__image img {
   width: 100%;
@@ -697,9 +694,9 @@ body {
     margin-bottom: 2.2em
   }
   .screen-02__container {
-    min-height: 100%;
-    display: flex;
-    align-items: flex-start
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(40%,1fr))
   }
   .screen-02__content {
     padding-right: 1.25rem;

@@ -643,8 +643,7 @@ body {
   align-items: center
 }
 .screen-12__body {
-  position: relative;
-  flex-grow: 1
+  position: relative
 }
 .screen-12__body::after {
   content: "";
@@ -1108,9 +1107,8 @@ body {
   }
   .screen-12__body {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100%
+    align-items: center;
+    justify-content: center
   }
   .screen-12__items {
     flex-direction: column;

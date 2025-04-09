@@ -357,6 +357,7 @@ body {
   padding-bottom: 1.875rem
 }
 .screen-02__image {
+  align-self: end;
   aspect-ratio: 720/840
 }
 .screen-02__image img {
@@ -638,7 +639,8 @@ body {
 }
 .screen-12__container {
   min-height: 100%;
-  display: flex
+  display: grid;
+  align-items: center
 }
 .screen-12__body {
   position: relative;
@@ -763,11 +765,6 @@ body {
     position: absolute;
     top: 0;
     left: 0
-  }
-  .screen-12__container {
-    align-items: center;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem
   }
 }
 @media (min-width:47.99875em)and (min-width:120em) {
@@ -1104,8 +1101,7 @@ body {
     margin-bottom: 1.875rem
   }
   .screen-12__container {
-    padding-left: 0;
-    padding-right: 0
+    align-items: stretch
   }
   .screen-12__body::after {
     opacity: .8
@@ -1289,6 +1285,12 @@ body {
   }
   .screen-09__items {
     margin-right: clamp(-15rem ,1.875rem + -14.0625vw ,-.9375rem)
+  }
+  .screen-12__container {
+    padding-left: clamp(-15rem ,1.875rem + -14.0625vw ,-.9375rem)
+  }
+  .screen-12__container {
+    padding-right: clamp(-15rem ,1.875rem + -14.0625vw ,-.9375rem)
   }
 }
 @media (min-width:47.99875em)and (min-width:20em)and (max-width:120em) {

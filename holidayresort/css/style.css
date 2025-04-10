@@ -327,7 +327,9 @@ body {
   -webkit-transform: translate(0,12.5rem);
   transform: translate(0,12.5rem);
   opacity: 0;
-  transition: all 1.2s
+  transition: opacity 1.2s,-webkit-transform 1.2s;
+  transition: transform 1.2s,opacity 1.2s;
+  transition: transform 1.2s,opacity 1.2s,-webkit-transform 1.2s
 }
 .hero__title._watcher-view {
   -webkit-transform: translate(0,0);
@@ -343,7 +345,9 @@ body {
   -webkit-transform: translate(0,12.5rem);
   transform: translate(0,12.5rem);
   opacity: 0;
-  transition: all 1.2s .4s
+  transition: opacity 1.2s .4s,-webkit-transform 1.2s .4s;
+  transition: transform 1.2s .4s,opacity 1.2s .4s;
+  transition: transform 1.2s .4s,opacity 1.2s .4s,-webkit-transform 1.2s .4s
 }
 .hero__subtitle._watcher-view {
   -webkit-transform: translate(0,0);
@@ -354,7 +358,9 @@ body {
   -webkit-transform: translate(0,12.5rem);
   transform: translate(0,12.5rem);
   opacity: 0;
-  transition: all 1.2s .8s
+  transition: opacity 1.2s .8s,-webkit-transform 1.2s .8;
+  transition: transform 1.2s .8,opacity 1.2s .8s;
+  transition: transform 1.2s .8,opacity 1.2s .8s,-webkit-transform 1.2s .8
 }
 .hero__button._watcher-view {
   -webkit-transform: translate(0,0);
@@ -386,7 +392,9 @@ body {
   -webkit-transform: translate(0,6.25rem);
   transform: translate(0,6.25rem);
   opacity: 0;
-  transition: all 1.2s .8s
+  transition: opacity 1.2s .8s,-webkit-transform 1.2s .8s;
+  transition: transform 1.2s .8s,opacity 1.2s .8s;
+  transition: transform 1.2s .8s,opacity 1.2s .8s,-webkit-transform 1.2s .8s
 }
 .about__text._watcher-view {
   -webkit-transform: translate(0,0);
@@ -397,7 +405,9 @@ body {
   -webkit-transform: translate(0,6.25rem);
   transform: translate(0,6.25rem);
   opacity: 0;
-  transition: all 1.2s 1s
+  transition: opacity 1.2s 1s,background-color .3s,color .3s,-webkit-transform 1.2s 1s;
+  transition: transform 1.2s 1s,opacity 1.2s 1s,background-color .3s,color .3s;
+  transition: transform 1.2s 1s,opacity 1.2s 1s,background-color .3s,color .3s,-webkit-transform 1.2s 1s
 }
 .about__button._watcher-view {
   -webkit-transform: translate(0,0);
@@ -479,7 +489,9 @@ body {
   -webkit-transform: translate(-12.5rem,0);
   transform: translate(-12.5rem,0);
   opacity: 0;
-  transition: all 3s;
+  transition: opacity 3s,-webkit-transform 3s;
+  transition: transform 3s,opacity 3s;
+  transition: transform 3s,opacity 3s,-webkit-transform 3s;
   transition-duration: 0
 }
 .item._watcher-view {

@@ -358,9 +358,9 @@ body {
   -webkit-transform: translate(0,12.5rem);
   transform: translate(0,12.5rem);
   opacity: 0;
-  transition: opacity 1.2s .8s,-webkit-transform 1.2s .8s;
-  transition: transform 1.2s .8s,opacity 1.2s .8s;
-  transition: transform 1.2s .8s,opacity 1.2s .8s,-webkit-transform 1.2s .8s
+  transition: opacity 1.2s .8s,background-color .3s,color .3s,-webkit-transform 1.2s .8s;
+  transition: transform 1.2s .8s,opacity 1.2s .8s,background-color .3s,color .3s;
+  transition: transform 1.2s .8s,opacity 1.2s .8s,background-color .3s,color .3s,-webkit-transform 1.2s .8s
 }
 .hero__button._watcher-view {
   -webkit-transform: translate(0,0);

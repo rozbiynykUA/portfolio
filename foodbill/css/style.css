@@ -715,19 +715,19 @@ h6 {
   transition-delay: 0s
 }
 .item-produkt:nth-child(2) {
-  transition-delay: .3s
+  transition-delay: .2s
 }
 .item-produkt:nth-child(3) {
-  transition-delay: .6s
+  transition-delay: .4s
 }
 .item-produkt:nth-child(4) {
-  transition-delay: .9s
+  transition-delay: .8s
 }
 .item-produkt:nth-child(5) {
-  transition-delay: 1.2s
+  transition-delay: 1s
 }
 .item-produkt:nth-child(6) {
-  transition-delay: 1.5s
+  transition-delay: 1.2s
 }
 .mobile__container {
   position: relative

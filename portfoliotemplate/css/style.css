@@ -3793,11 +3793,17 @@ body {
   transition: transform .8s,opacity .8s,-webkit-transform .8s;
   opacity: 0
 }
-.item-testimonials:nth-child(even) {
-  border-radius: 0 .375rem .375rem 0
+.item-testimonials:nth-child(4n+1) {
+  border-radius: .375rem 0 0 0
 }
-.item-testimonials:nth-child(odd) {
-  border-radius: .375rem 0 0 .375rem
+.item-testimonials:nth-child(4n+2) {
+  border-radius: 0 .375rem 0 0
+}
+.item-testimonials:nth-child(4n+3) {
+  border-radius: 0 0 0 .375rem
+}
+.item-testimonials:nth-child(4n+4) {
+  border-radius: 0 0 .375rem 0
 }
 .item-testimonials:nth-child(5n+1) {
   -webkit-transform: translate(-50%,0);
@@ -14400,6 +14406,18 @@ body {
   }
 }
 @media (max-width:51.87375em) {
+  .item-testimonials:nth-child(4n+1) {
+    border-radius: .375rem .375rem 0 0
+  }
+  .item-testimonials:nth-child(4n+2) {
+    border-radius: 0
+  }
+  .item-testimonials:nth-child(4n+3) {
+    border-radius: 0
+  }
+  .item-testimonials:nth-child(4n+4) {
+    border-radius: 0 0 .375rem .375rem
+  }
   .item-testimonials-webflow:nth-child(4n+1) {
     border-radius: .375rem .375rem 0 0
   }

@@ -45,9 +45,31 @@
 		</div>
 		<div class="rootpage__contacts">
 			<h2 class="lng-title-rootpage-contacts">Мої контакти:</h2>
-			<p class="lng-text-one-rootpage-contacts">Пошта: <a href="mailto:danjo.alex.777@gmail.com">danjo.alex.777@gmail.com</a></p>
-			<p class="lng-text-two-rootpage-contacts">Телефон: <a href="tel:+380969814338">+38 096 981 43 38</a></p>
-			<p class="lng-text-three-rootpage-contacts">Соц. мережі: <a href="https://t.me/rozbiynykUA">@rozbiynykUA</a></p>
+			<ul>
+				<li>
+					<a target="_blank" href="mailto:danjo.alex.777@gmail.com">
+						<img src="img/icons/email-black.svg" alt="Email icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="tel:+380969814338">
+						<img src="img/icons/dial-pad-black.svg" alt="Phone icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://t.me/rozbiynykUA">
+						<img src="img/icons/telegram-black.svg" alt="Telegram icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://wa.me/+380969814338">
+						<img src="img/icons/whatsapp-black.svg" alt="Whatsapp icon">
+					</a>
+				</li>
+			</ul>
+			<!-- <p class="lng-text-one-rootpage-contacts">Пошта: <a href="mailto:danjo.alex.777@gmail.com">danjo.alex.777@gmail.com</a></p>
+				<p class="lng-text-two-rootpage-contacts">Телефон: <a href="tel:+380969814338">+38 096 981 43 38</a></p>
+				<p class="lng-text-three-rootpage-contacts">Соц. мережі: <a href="https://t.me/rozbiynykUA">@rozbiynykUA</a></p> -->
 		</div>
 	</div>
 </body>
@@ -290,7 +312,7 @@
 	.rootpage__contacts,
 	.rootpage__tnx {
 		border-radius: 20px;
-		padding: 20px 65px;
+		padding: 20px 40px;
 		line-height: 140%;
 	}
 
@@ -308,6 +330,28 @@
 		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.3);
+		text-align: center;
+	}
+
+	.rootpage__contacts ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	.rootpage__contacts img {
+		width: 48px;
+		aspect-ratio: 48 / 48;
+		object-fit: contain;
+		will-change: transform;
+		transition: transform 0.4s;
+	}
+
+	@media (any-hover:hover) {
+		.rootpage__contacts img:hover {
+			transform: scale(1.1);
+		}
 	}
 
 	.rootpage__contacts a {

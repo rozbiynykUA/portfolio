@@ -164,7 +164,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../../../img/icons/select.svg) center/100% no-repeat
+  background: url(../img/icons/select.svg) center/100% no-repeat
 }
 ._select-open .select__value:after {
   -webkit-transform: rotate(-180deg);
@@ -313,7 +313,7 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background: var(--bg-rose) url(../../img/icons/spollers.svg) center/.725rem no-repeat
+  background: var(--bg-rose) url(../img/icons/spollers.svg) center/.725rem no-repeat
 }
 ._spoller-init .spollers__title._spoller-active::before {
   -webkit-transform: rotate(180deg);

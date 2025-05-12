@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title class="lng-title">Верстка «portfoliotemplate»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<select class="select-rootpage" data-class-modif="select-rootpage">
+			<option class="select-rootpage__option" value="en">EN</option>
+			<option class="select-rootpage__option" value="ua">UA</option>
+		</select>
+		<h1 class="lng-title-rootpage">Верстка «portfoliotemplate»</h1>
+		<div class="rootpage__info">
+			Опис проєкту
+		</div>
+		<h2 class="lng-title-rootpage-list">Готові сторінки:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home-agency.html">Home Agency</a></li>
+			<li><a target="_blank" href="home-personal.html">Home Personal</a></li>
+			<li><a target="_blank" href="home-webflow.html">Home Webflow</a></li>
+			<li><a target="_blank" href="about-agency.html">About Agency</a></li>
+			<li><a target="_blank" href="about-personal.html">About Personal</a></li>
+			<li><a target="_blank" href="services-agency.html">Services Agency</a></li>
+			<li><a target="_blank" href="portfolio-agency-one.html">Portfolio Agency (Variant one)</a></li>
+			<li><a target="_blank" href="portfolio-agency-two.html">Portfolio Agency (Variant two)</a></li>
+			<li><a target="_blank" href="single-project.html">Single Project</a></li>
+			<li><a target="_blank" href="blog-agency.html">Blog Agency</a></li>
+			<li><a target="_blank" href="single-post.html">Single Post</a></li>
+			<li><a target="_blank" href="contacts-agency.html">Contacts Agency</a></li>
+		</ol>
+		<!-- <h2>Попапи:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home-agency.html#"></a></li>
+				<li><a target="_blank" href="home-personal.html#"></a></li>
+				<li><a target="_blank" href="home-webflow.html#"></a></li>
+			</ol> -->
+		<div class="rootpage__tnx">
+			<h2 class="lng-title-rootpage-tnx">Дякую за замовлення!</h2>
+			<p class="lng-text-one-rootpage-tnx">Буду радий гарному відгуку.</p>
+			<p class="lng-text-two-rootpage-tnx">Звертайтесь ще!</p>
+		</div>
+		<div class="rootpage__contacts">
+			<h2 class="lng-title-rootpage-contacts">Мої контакти:</h2>
+			<p class="lng-text-one-rootpage-contacts">Пошта: <a href="mailto:danjo.alex.777@gmail.com">danjo.alex.777@gmail.com</a></p>
+			<p class="lng-text-two-rootpage-contacts">Телефон: <a href="tel:+380969814338">+38 096 981 43 38</a></p>
+			<p class="lng-text-three-rootpage-contacts">Соц. мережі: <a href="https://t.me/rozbiynykUA">@rozbiynykUA</a></p>
+		</div>
+	</div>
+</body>
+<script>
+	const select = document.querySelector("select")
+	const allLang = ["en", "ua"]
+	const langArr = {
+		"lng-title": {
+			"en": "Layout «portfoliotemplate»",
+			"ua": "Верстка «portfoliotemplate»",
+		},
+		"lng-title-rootpage": {
+			"en": "Layout «portfoliotemplate»",
+			"ua": "Верстка «portfoliotemplate»",
+		},
+		"rootpage__info": {
+			"en": "Project description",
+			"ua": "Опис проєкту",
+		},
+		"lng-title-rootpage-list": {
+			"en": "Ready-made pages",
+			"ua": "Готові сторінки",
+		},
+		"lng-title-rootpage-tnx": {
+			"en": "Thank you for your order!",
+			"ua": "Дякую за замовлення!",
+		},
+		"lng-text-one-rootpage-tnx": {
+			"en": "I will be glad to hear a good review.",
+			"ua": "Буду радий гарному відгуку.",
+		},
+		"lng-text-two-rootpage-tnx": {
+			"en": "Contact us again!",
+			"ua": "Звертайтесь ще!",
+		},
+		"lng-title-rootpage-contacts": {
+			"en": "My contacts:",
+			"ua": "Мої контакти:",
+		},
+		"lng-text-one-rootpage-contacts": {
+			"en": "Mail: danjo.alex.777@gmail.com",
+			"ua": "Пошта: danjo.alex.777@gmail.com",
+		},
+		"lng-text-two-rootpage-contacts": {
+			"en": "Phone: +38 096 981 43 38",
+			"ua": "Телефон: +38 096 981 43 38",
+		},
+		"lng-text-three-rootpage-contacts": {
+			"en": "Social networks: @rozbiynykUA",
+			"ua": "Соц. мережі: @rozbiynykUA",
+		}
+	}
+	select.addEventListener("change", changeURLLanguage)
+
+	function changeURLLanguage() {
+		let lang = select.value
+		location.href = window.location.pathname + "#" + lang
+		location.reload()
+	}
+
+	function changeLanguage() {
+		let hash = window.location.hash
+		hash = hash.substr(1)
+		if (!allLang.includes(hash)) {
+			location.href = window.location.pathname + "#en"
+			location.reload()
+		}
+		select.value = hash
+		document.querySelector("title").innerHTML = langArr["lng-title"][hash]
+		document.querySelector(".lng-title-rootpage").innerHTML = langArr["lng-title-rootpage"][hash]
+		document.querySelector(".rootpage__info").innerHTML = langArr["rootpage__info"][hash]
+		document.querySelector(".lng-title-rootpage-list").innerHTML = langArr["lng-title-rootpage-list"][hash]
+		document.querySelector(".lng-title-rootpage-tnx").innerHTML = langArr["lng-title-rootpage-tnx"][hash]
+		document.querySelector(".lng-text-one-rootpage-tnx").innerHTML = langArr["lng-text-one-rootpage-tnx"][hash]
+		document.querySelector(".lng-text-two-rootpage-tnx").innerHTML = langArr["lng-text-two-rootpage-tnx"][hash]
+		document.querySelector(".lng-title-rootpage-contacts").innerHTML = langArr["lng-title-rootpage-contacts"][hash]
+		document.querySelector(".lng-text-one-rootpage-contacts").innerHTML = langArr["lng-text-one-rootpage-contacts"][hash]
+		document.querySelector(".lng-text-two-rootpage-contacts").innerHTML = langArr["lng-text-two-rootpage-contacts"][hash]
+		document.querySelector(".lng-text-three-rootpage-contacts").innerHTML = langArr["lng-text-three-rootpage-contacts"][hash]
+		// for (let key in langArr) {
+		// 	document.querySelector(".lng-" + key).innerHTML = langArr[key][hash]
+		// }
+	}
+
+	changeLanguage()
+</script>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+	}
+
+	body {
+		position: relative;
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #fff;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		position: relative;
+		z-index: 5;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		background: url('img/index/green-tree-02.webp') center / cover no-repeat;
+		min-height: 100svh;
+	}
+
+	.rootpage::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-color: #000;
+		opacity: 0.5;
+		z-index: -1;
+		pointer-events: none;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	.select-rootpage {
+		margin-bottom: 10px;
+		font-weight: 700;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: transparent;
+		border: 1px solid #ebe691;
+		color: #ebe691;
+	}
+
+	.select-rootpage__option {
+		font-weight: 700;
+		background-color: #000;
+		border: 1px solid #ebe691;
+		color: #ebe691;
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	@media (max-width: 479px) {
+		h1 {
+			font-size: 1.8rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 20px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: rgba(255, 255, 255, 0.2);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: rgba(255, 255, 255, 0.2);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>

@@ -582,7 +582,7 @@ h6 {
   flex-direction: row-reverse
 }
 .categories__body {
-  flex-basis: 30.138889%
+  flex-basis: 30%
 }
 .categories__content {
   color: #2f241f
@@ -596,7 +596,7 @@ h6 {
   line-height: 1.2
 }
 .categories__gallery {
-  flex-basis: 56.666667%
+  flex-basis: 70%
 }
 .controls__button {
   width: 100%;
@@ -673,7 +673,8 @@ h6 {
   border-radius: .75rem;
   background-color: #e5f0b6;
   text-transform: uppercase;
-  line-height: 1.5
+  line-height: 1.5;
+  transition: background .4s,box-shadow .4s
 }
 .products .swiper {
   overflow: initial;
@@ -768,7 +769,6 @@ h6 {
 }
 .controls-products__next,
 .controls-products__prev {
-  background-color: #e5f0b6;
   border-radius: 50%;
   width: 3.5rem;
   height: 3.5rem;
@@ -776,7 +776,8 @@ h6 {
   background: #e5f0b6 url(../img/icons/arrow_back_ios.svg) center/42.85% no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  transition: background .4s
 }
 .controls-products__prev {
   -webkit-transform: rotate(180deg);
@@ -827,13 +828,18 @@ h6 {
 }
 .dials__button {
   background-color: #e5f0b6;
-  border-radius: 0 .75rem .75rem 0
+  border-radius: 0 .75rem .75rem 0;
+  transition: box-shadow .4s
 }
 .dials__button img {
   width: 1.5rem;
   height: 1.5rem;
   -o-object-fit: cover;
-  object-fit: cover
+  object-fit: cover;
+  will-change: transform;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s,-webkit-transform .4s
 }
 .swiper {
   overflow: hidden
@@ -875,6 +881,9 @@ h6 {
   .menu-footer__spollers .spollers__body {
     gap: 1.875rem
   }
+  .menu-footer__spollers .spollers__body {
+    padding-top: 1.5625rem
+  }
   .header__container {
     gap: 1.25rem
   }
@@ -903,9 +912,6 @@ h6 {
   }
   .footer__logo:not(:last-child) {
     margin-bottom: 1.5625rem
-  }
-  .spollers__body {
-    padding-top: 1.5625rem
   }
   .hero__content:not(:last-child) {
     margin-bottom: 2.8125rem
@@ -1199,6 +1205,9 @@ h6 {
   .menu-footer__spollers .spollers__body {
     gap: .9375rem
   }
+  .menu-footer__spollers .spollers__body {
+    padding-top: .625rem
+  }
   .header__container {
     gap: .625rem
   }
@@ -1227,9 +1236,6 @@ h6 {
   }
   .footer__logo:not(:last-child) {
     margin-bottom: .625rem
-  }
-  .spollers__body {
-    padding-top: .625rem
   }
   .hero__content:not(:last-child) {
     margin-bottom: 2rem
@@ -1685,6 +1691,9 @@ h6 {
   .menu-footer__spollers .spollers__body {
     gap: clamp(.9375rem ,.6217105263rem + 1.5789473684vw ,1.875rem)
   }
+  .menu-footer__spollers .spollers__body {
+    padding-top: clamp(.625rem ,.3092105263rem + 1.5789473684vw ,1.5625rem)
+  }
   .header__container {
     gap: clamp(.625rem ,.4144736842rem + 1.0526315789vw ,1.25rem)
   }
@@ -1713,9 +1722,6 @@ h6 {
   }
   .footer__logo:not(:last-child) {
     margin-bottom: clamp(.625rem ,.3092105263rem + 1.5789473684vw ,1.5625rem)
-  }
-  .spollers__body {
-    padding-top: clamp(.625rem ,.3092105263rem + 1.5789473684vw ,1.5625rem)
   }
   .hero__content:not(:last-child) {
     margin-bottom: clamp(2rem ,1.7263157895rem + 1.3684210526vw ,2.8125rem)
@@ -2023,5 +2029,20 @@ h6 {
   }
   .image-hero__button:hover {
     box-shadow: 0 0 .625rem .1875rem #fff
+  }
+  .products__button:hover {
+    background-color: #cddf7e;
+    box-shadow: 0 0 .625rem .1875rem #fff
+  }
+  .controls-products__next:hover,
+  .controls-products__prev:hover {
+    background-color: #cddf7e
+  }
+  .dials__button:hover {
+    box-shadow: 0 0 .625rem .125rem #ccc
+  }
+  .dials__button:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
   }
 }

@@ -1,6 +1,13 @@
 (() => {
     "use strict";
     const modules_flsModules = {};
+    function addLoadedClass() {
+        if (!document.documentElement.classList.contains("loading")) window.addEventListener("load", (function() {
+            setTimeout((function() {
+                document.documentElement.classList.add("loaded");
+            }), 0);
+        }));
+    }
     let _slideUp = (target, duration = 500, showmore = 0) => {
         if (!target.classList.contains("_slide")) {
             target.classList.add("_slide");
@@ -3616,19 +3623,19 @@
             breakpoints: {
                 320: {
                     slidesPerView: 3,
-                    spaceBetween: 25
+                    spaceBetween: 30
                 },
                 480: {
                     slidesPerView: 2.5,
-                    spaceBetween: 25
+                    spaceBetween: 30
                 },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 25
+                    spaceBetween: 30
                 },
                 992: {
                     slidesPerView: 3.5,
-                    spaceBetween: 30
+                    spaceBetween: 36
                 },
                 1268: {
                     slidesPerView: 4,
@@ -3871,6 +3878,7 @@
     const da = new DynamicAdapt("max");
     da.init();
     window["FLS"] = true;
+    addLoadedClass();
     menuInit();
     spollers();
     digitsCounter();

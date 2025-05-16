@@ -852,19 +852,6 @@ body {
 .products .mobile.swiper {
   overflow: hidden
 }
-.products__wrapper {
-  -webkit-transform: translate(50%,0);
-  transform: translate(50%,0);
-  opacity: 0;
-  transition: opacity .6s,-webkit-transform .6s;
-  transition: transform .6s,opacity .6s;
-  transition: transform .6s,opacity .6s,-webkit-transform .6s
-}
-.products__wrapper._watcher-view {
-  -webkit-transform: translate(0,0);
-  transform: translate(0,0);
-  opacity: 1
-}
 .products__wrapper:not(:last-child) {
   margin-bottom: 2.5rem
 }

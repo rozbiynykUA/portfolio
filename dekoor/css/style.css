@@ -764,6 +764,7 @@ h6 {
 .controls-products {
   display: flex;
   justify-content: flex-end;
+  flex-direction: row-reverse;
   gap: 2.25rem
 }
 .controls-products__next,
@@ -778,7 +779,7 @@ h6 {
   justify-content: center;
   transition: background .4s
 }
-.controls-products__prev {
+.controls-products__next {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg)
 }
@@ -1042,7 +1043,7 @@ h6 {
     padding-top: 5rem
   }
   .products {
-    padding-bottom: 5rem
+    padding-bottom: 8.125rem
   }
   .products__header {
     gap: 1.25rem
@@ -1849,7 +1850,7 @@ h6 {
     padding-top: clamp(1.875rem ,.8223684211rem + 5.2631578947vw ,5rem)
   }
   .products {
-    padding-bottom: clamp(1.875rem ,.8223684211rem + 5.2631578947vw ,5rem)
+    padding-bottom: clamp(1.875rem ,-.2302631579rem + 10.5263157895vw ,8.125rem)
   }
   .products__header {
     gap: clamp(.3125rem ,-.0032894737rem + 1.5789473684vw ,1.25rem)

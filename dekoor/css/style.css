@@ -828,9 +828,9 @@ body {
   -webkit-transform: scale(0);
   transform: scale(0);
   opacity: 0;
-  transition: opacity .6s 1s,-webkit-transform .6s 1s;
-  transition: transform .6s 1s,opacity .6s 1s;
-  transition: transform .6s 1s,opacity .6s 1s,-webkit-transform .6s 1s
+  transition: opacity .6s .8s,-webkit-transform .6s .8s;
+  transition: transform .6s .8s,opacity .6s .8s;
+  transition: transform .6s .8s,opacity .6s .8s,-webkit-transform .6s .8s
 }
 .products__actions._watcher-view {
   -webkit-transform: scale(1);
@@ -856,9 +856,9 @@ body {
   -webkit-transform: translate(50%,0);
   transform: translate(50%,0);
   opacity: 0;
-  transition: opacity .6s .8s,-webkit-transform .6s .8s;
-  transition: transform .6s .8s,opacity .6s .8s;
-  transition: transform .6s .8s,opacity .6s .8s,-webkit-transform .6s .8s
+  transition: opacity .6s,-webkit-transform .6s;
+  transition: transform .6s,opacity .6s;
+  transition: transform .6s,opacity .6s,-webkit-transform .6s
 }
 .products__wrapper._watcher-view {
   -webkit-transform: translate(0,0);
@@ -898,9 +898,9 @@ body {
   -webkit-transform: scale(0);
   transform: scale(0);
   opacity: 0;
-  transition: opacity .6s 1s,-webkit-transform .6s 1s;
-  transition: transform .6s 1s,opacity .6s 1s;
-  transition: transform .6s 1s,opacity .6s 1s,-webkit-transform .6s 1s
+  transition: opacity .6s .8s,-webkit-transform .6s .8s;
+  transition: transform .6s .8s,opacity .6s .8s;
+  transition: transform .6s .8s,opacity .6s .8s,-webkit-transform .6s .8s
 }
 .products__controls._watcher-view {
   -webkit-transform: scale(1);

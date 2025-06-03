@@ -1143,7 +1143,7 @@ body::after {
   aspect-ratio: 24/24;
   flex-shrink: 0
 }
-.rating-reviews {
+.rating-movies {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1157,20 +1157,20 @@ body::after {
   background-color: var(--bg-block-03);
   padding: .375rem .625rem
 }
-.rating-reviews__value {
+.rating-movies__value {
   display: flex;
   align-items: center;
   -webkit-column-gap: .125rem;
   -moz-column-gap: .125rem;
   column-gap: .125rem
 }
-.rating-reviews__value img {
+.rating-movies__value img {
   aspect-ratio: 18/18;
   -o-object-fit: cover;
   object-fit: cover;
   flex-shrink: 0
 }
-.rating-reviews__voices {
+.rating-movies__voices {
   font-weight: 500
 }
 .item-rating {
@@ -1959,7 +1959,7 @@ body::after {
 }
 .column-footer__link--social {
   width: 3.5rem;
-  aspect-ratio: 56/56;
+  height: 3.5rem;
   padding: 1rem;
   border-radius: .5rem;
   border: .0625rem solid var(--bg-border);
@@ -1973,8 +1973,8 @@ body::after {
 .column-footer__link--social img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
   will-change: transform;
   transition: -webkit-transform .4s;
   transition: transform .4s;
@@ -3278,13 +3278,13 @@ body::after {
   .season-movies::before {
     width: 1.5rem
   }
-  .rating-reviews__value img {
+  .rating-movies__value img {
     width: 1.125rem
   }
-  .rating-reviews__voices {
+  .rating-movies__voices {
     font-size: .875rem
   }
-  .rating-reviews__voices--big {
+  .rating-movies__voices--big {
     font-size: 1.125rem
   }
   .item-rating {
@@ -4376,13 +4376,13 @@ body::after {
   .season-movies::before {
     width: 1rem
   }
-  .rating-reviews__value img {
+  .rating-movies__value img {
     width: .75rem
   }
-  .rating-reviews__voices {
+  .rating-movies__voices {
     font-size: .625rem
   }
-  .rating-reviews__voices--big {
+  .rating-movies__voices--big {
     font-size: .875rem
   }
   .item-rating {
@@ -5273,6 +5273,10 @@ body::after {
     padding: 0;
     row-gap: 1.5625rem
   }
+  .menu__link--active {
+    border: none;
+    background-color: rgba(0,0,0,0)
+  }
   .menu__link {
     font-size: 2.125rem
   }
@@ -5380,12 +5384,6 @@ body::after {
     row-gap: .625rem
   }
 }
-@media (max-width:26.24875em) {
-  .item-must__footer {
-    flex-direction: column;
-    align-items: flex-start
-  }
-}
 @media (max-width:26.74875em) {
   .shelf-seasons__link {
     align-items: flex-start
@@ -5431,6 +5429,12 @@ body::after {
 @media (max-width:22.49875em) {
   .header__logo {
     max-width: 7.5rem
+  }
+}
+@media (max-width:21.24875em) {
+  .item-must__footer {
+    flex-direction: column;
+    align-items: flex-start
   }
 }
 @media (min-width:20em)and (max-width:101.5625em) {
@@ -5777,13 +5781,13 @@ body::after {
   .season-movies::before {
     width: clamp(1rem ,.877394636rem + .6130268199vw ,1.5rem)
   }
-  .rating-reviews__value img {
+  .rating-movies__value img {
     width: clamp(.75rem ,.658045977rem + .4597701149vw ,1.125rem)
   }
-  .rating-reviews__voices {
+  .rating-movies__voices {
     font-size: clamp(.625rem ,.563697318rem + .30651341vw ,.875rem)
   }
-  .rating-reviews__voices--big {
+  .rating-movies__voices--big {
     font-size: clamp(.875rem ,.813697318rem + .30651341vw ,1.125rem)
   }
   .item-rating {

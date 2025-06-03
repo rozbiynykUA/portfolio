@@ -2433,9 +2433,9 @@ body::after {
   opacity: 0;
   -webkit-transform: translate(50%,0);
   transform: translate(50%,0);
-  transition: opacity .8s .3s,-webkit-transform .8s .3s;
-  transition: transform .8s .3s,opacity .8s .3s;
-  transition: transform .8s .3s,opacity .8s .3s,-webkit-transform .8s .3s
+  transition: opacity .8s .4s,-webkit-transform .8s .4s;
+  transition: transform .8s .4s,opacity .8s .4s;
+  transition: transform .8s .4s,opacity .8s .4s,-webkit-transform .8s .4s
 }
 .films-movies__genres .controls._watcher-view,
 .films-movies__must .controls._watcher-view,
@@ -2449,11 +2449,11 @@ body::after {
 .genres-films-movies__slider {
   opacity: 0;
   will-change: transform;
-  -webkit-transform: translate(-50%,0);
-  transform: translate(-50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  -webkit-transform: translate(50%,0);
+  transform: translate(50%,0);
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .genres-films-movies__slider._watcher-view {
   opacity: 1;
@@ -2465,9 +2465,9 @@ body::after {
   will-change: transform;
   -webkit-transform: translate(50%,0);
   transform: translate(50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .popular-films-movies__slider._watcher-view {
   opacity: 1;
@@ -2477,11 +2477,11 @@ body::after {
 .trending-films-movies__slider {
   opacity: 0;
   will-change: transform;
-  -webkit-transform: translate(-50%,0);
-  transform: translate(-50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  -webkit-transform: translate(50%,0);
+  transform: translate(50%,0);
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .trending-films-movies__slider._watcher-view {
   opacity: 1;
@@ -2493,9 +2493,9 @@ body::after {
   will-change: transform;
   -webkit-transform: translate(50%,0);
   transform: translate(50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .releases-films-movies__slider._watcher-view {
   opacity: 1;
@@ -2505,11 +2505,11 @@ body::after {
 .must-films-movies__slider {
   opacity: 0;
   will-change: transform;
-  -webkit-transform: translate(-50%,0);
-  transform: translate(-50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  -webkit-transform: translate(50%,0);
+  transform: translate(50%,0);
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .must-films-movies__slider._watcher-view {
   opacity: 1;
@@ -2559,9 +2559,9 @@ body::after {
   opacity: 0;
   -webkit-transform: translate(50%,0);
   transform: translate(50%,0);
-  transition: opacity .8s .3s,-webkit-transform .8s .3s;
-  transition: transform .8s .3s,opacity .8s .3s;
-  transition: transform .8s .3s,opacity .8s .3s,-webkit-transform .8s .3s
+  transition: opacity .8s .4s,-webkit-transform .8s .4s;
+  transition: transform .8s .4s,opacity .8s .4s;
+  transition: transform .8s .4s,opacity .8s .4s,-webkit-transform .8s .4s
 }
 .show-movies__genres .controls._watcher-view,
 .show-movies__must .controls._watcher-view,
@@ -2575,11 +2575,11 @@ body::after {
 .genres-show-movies__slider {
   opacity: 0;
   will-change: transform;
-  -webkit-transform: translate(-50%,0);
-  transform: translate(-50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  -webkit-transform: translate(50%,0);
+  transform: translate(50%,0);
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .genres-show-movies__slider._watcher-view {
   opacity: 1;
@@ -2591,9 +2591,9 @@ body::after {
   will-change: transform;
   -webkit-transform: translate(50%,0);
   transform: translate(50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .popular-show-movies__slider._watcher-view {
   opacity: 1;
@@ -2603,11 +2603,11 @@ body::after {
 .trending-show-movies__slider {
   opacity: 0;
   will-change: transform;
-  -webkit-transform: translate(-50%,0);
-  transform: translate(-50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  -webkit-transform: translate(50%,0);
+  transform: translate(50%,0);
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .trending-show-movies__slider._watcher-view {
   opacity: 1;
@@ -2619,9 +2619,9 @@ body::after {
   will-change: transform;
   -webkit-transform: translate(50%,0);
   transform: translate(50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .released-show-movies__slider._watcher-view {
   opacity: 1;
@@ -2631,11 +2631,11 @@ body::after {
 .must-show-movies__slider {
   opacity: 0;
   will-change: transform;
-  -webkit-transform: translate(-50%,0);
-  transform: translate(-50%,0);
-  transition: opacity 1s .9s,-webkit-transform 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s;
-  transition: transform 1s .9s,opacity 1s .9s,-webkit-transform 1s .9s
+  -webkit-transform: translate(50%,0);
+  transform: translate(50%,0);
+  transition: opacity 1s .6s,-webkit-transform 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s;
+  transition: transform 1s .6s,opacity 1s .6s,-webkit-transform 1s .6s
 }
 .must-show-movies__slider._watcher-view {
   opacity: 1;
@@ -5187,6 +5187,9 @@ body::after {
   .menu-open .menu__body::before {
     left: 0
   }
+  .menu__link {
+    font-size: 2.125rem
+  }
   .icon-menu {
     display: block;
     position: relative;
@@ -5244,6 +5247,33 @@ body::after {
   .faq__button {
     width: 65%
   }
+  .faq__spollers .spollers__column:nth-child(odd) .spollers__content:nth-child(5n+2)._watcher-view {
+    transition-delay: 0s
+  }
+  .faq__spollers .spollers__column:nth-child(odd) .spollers__content:nth-child(5n+3)._watcher-view {
+    transition-delay: 0s
+  }
+  .faq__spollers .spollers__column:nth-child(odd) .spollers__content:nth-child(5n+4)._watcher-view {
+    transition-delay: 0s
+  }
+  .faq__spollers .spollers__column:nth-child(even) .spollers__content:nth-child(5n+2)._watcher-view {
+    transition-delay: 0s
+  }
+  .faq__spollers .spollers__column:nth-child(even) .spollers__content:nth-child(5n+3)._watcher-view {
+    transition-delay: 0s
+  }
+  .faq__spollers .spollers__column:nth-child(even) .spollers__content:nth-child(5n+4)._watcher-view {
+    transition-delay: 0s
+  }
+  .tabs-choose__item._watcher-view:nth-child(3n+1) {
+    transition-delay: 0s
+  }
+  .tabs-choose__item._watcher-view:nth-child(3n+2) {
+    transition-delay: 0s
+  }
+  .tabs-choose__item._watcher-view:nth-child(3n+3) {
+    transition-delay: 0s
+  }
   .start__header {
     flex-direction: column
   }
@@ -5288,6 +5318,15 @@ body::after {
   }
   .devices-home__section-header {
     width: 100%
+  }
+  .devices-home__item._watcher-view:nth-child(3n+1) {
+    transition-delay: 0s
+  }
+  .devices-home__item._watcher-view:nth-child(3n+2) {
+    transition-delay: 0s
+  }
+  .devices-home__item._watcher-view:nth-child(3n+3) {
+    transition-delay: 0s
   }
   .hero-movies__section-header {
     width: 100%

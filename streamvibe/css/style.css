@@ -3571,9 +3571,6 @@ body::after {
   .header__container {
     gap: .9375rem
   }
-  .menu__link {
-    font-size: 1.125rem
-  }
   .actions-header {
     -webkit-column-gap: 1.875rem;
     -moz-column-gap: 1.875rem;
@@ -4018,6 +4015,9 @@ body::after {
     -webkit-column-gap: 1.25rem;
     -moz-column-gap: 1.25rem;
     column-gap: 1.25rem
+  }
+  .menu__link {
+    font-size: 1.125rem
   }
   .menu__link {
     padding-top: .8125rem
@@ -4668,9 +4668,6 @@ body::after {
   }
   .header__container {
     gap: .625rem
-  }
-  .menu__link {
-    font-size: 1rem
   }
   .actions-header {
     -webkit-column-gap: .9375rem;
@@ -6113,9 +6110,6 @@ body::after {
   .header__container {
     gap: clamp(.625rem ,.5483716475rem + .3831417625vw ,.9375rem)
   }
-  .menu__link {
-    font-size: clamp(1rem ,.969348659rem + .153256705vw ,1.125rem)
-  }
   .actions-header {
     -webkit-column-gap: clamp(.9375rem ,.7076149425rem + 1.1494252874vw ,1.875rem);
     -moz-column-gap: clamp(.9375rem ,.7076149425rem + 1.1494252874vw ,1.875rem);
@@ -6562,6 +6556,9 @@ body::after {
     -webkit-column-gap: clamp(.625rem ,.2083333333rem + .8680555556vw ,1.25rem);
     -moz-column-gap: clamp(.625rem ,.2083333333rem + .8680555556vw ,1.25rem);
     column-gap: clamp(.625rem ,.2083333333rem + .8680555556vw ,1.25rem)
+  }
+  .menu__link {
+    font-size: clamp(1rem ,.9166666667rem + .1736111111vw ,1.125rem)
   }
   .menu__link {
     padding-top: clamp(.625rem ,.5rem + .2604166667vw ,.8125rem)

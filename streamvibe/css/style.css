@@ -5187,9 +5187,6 @@ body::after {
   .menu-open .menu__body::before {
     left: 0
   }
-  .menu__link {
-    font-size: 2.125rem
-  }
   .icon-menu {
     display: block;
     position: relative;
@@ -5276,12 +5273,12 @@ body::after {
     padding: 0;
     row-gap: 1.5625rem
   }
+  .menu__link {
+    font-size: 2.125rem
+  }
   .menu__link--active {
     border: none;
     background-color: rgba(0,0,0,0)
-  }
-  .menu__link {
-    font-size: 2.125rem
   }
   .hero-home__section-header {
     width: 100%

@@ -3980,6 +3980,9 @@ body::after {
   }
 }
 @media (min-width:48em) {
+  .menu__link {
+    font-size: 2.125rem
+  }
   .find-plan-subscriptions__navigation {
     padding-top: .75rem
   }
@@ -5184,9 +5187,6 @@ body::after {
   .menu-open .menu__body::before {
     left: 0
   }
-  .menu__link {
-    font-size: 2.125rem
-  }
   .icon-menu {
     display: block;
     position: relative;
@@ -5299,9 +5299,6 @@ body::after {
     border-radius: 0;
     padding: 0;
     row-gap: 1.5625rem
-  }
-  .menu__link {
-    font-size: 2.125rem
   }
   .menu__link--active {
     border: none;
@@ -6583,27 +6580,10 @@ body::after {
     row-gap: clamp(.625rem ,.471743295rem + .7662835249vw ,1.25rem)
   }
 }
-@media (max-width:61.99875em)and (min-width:101.5625em) {
-  .hero-support__container {
-    row-gap: 1.875rem
-  }
-}
-@media (max-width:61.99875em)and (min-width:20em)and (max-width:101.5625em) {
-  .hero-support__container {
-    row-gap: clamp(.9375rem ,.7076149425rem + 1.1494252874vw ,1.875rem)
-  }
-}
-@media (max-width:36.87375em)and (min-width:101.5625em) {
-  .form-support__footer {
-    row-gap: .9375rem
-  }
-}
-@media (max-width:36.87375em)and (min-width:20em)and (max-width:101.5625em) {
-  .form-support__footer {
-    row-gap: clamp(.625rem ,.5483716475rem + .3831417625vw ,.9375rem)
-  }
-}
 @media (min-width:20em)and (max-width:48em) {
+  .menu__link {
+    font-size: clamp(1.875rem ,1.6964285714rem + .8928571429vw ,2.125rem)
+  }
   .find-plan-subscriptions__navigation {
     padding-top: clamp(.5rem ,.3214285714rem + .8928571429vw ,.75rem)
   }
@@ -6627,6 +6607,26 @@ body::after {
   }
   .item-find-plan-subscriptions {
     padding-left: clamp(.9375rem ,.5357142857rem + 2.0089285714vw ,1.5rem)
+  }
+}
+@media (max-width:61.99875em)and (min-width:101.5625em) {
+  .hero-support__container {
+    row-gap: 1.875rem
+  }
+}
+@media (max-width:61.99875em)and (min-width:20em)and (max-width:101.5625em) {
+  .hero-support__container {
+    row-gap: clamp(.9375rem ,.7076149425rem + 1.1494252874vw ,1.875rem)
+  }
+}
+@media (max-width:36.87375em)and (min-width:101.5625em) {
+  .form-support__footer {
+    row-gap: .9375rem
+  }
+}
+@media (max-width:36.87375em)and (min-width:20em)and (max-width:101.5625em) {
+  .form-support__footer {
+    row-gap: clamp(.625rem ,.5483716475rem + .3831417625vw ,.9375rem)
   }
 }
 @media (any-hover:hover) {

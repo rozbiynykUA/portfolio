@@ -4132,7 +4132,8 @@
                 320: {
                     slidesPerGroup: 2,
                     slidesPerView: 1.5,
-                    spaceBetween: 20
+                    spaceBetween: 20,
+                    autoHeight: true
                 },
                 480: {
                     slidesPerGroup: 2,

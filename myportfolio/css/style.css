@@ -593,7 +593,6 @@ body {
   justify-content: center
 }
 .contacts__item {
-  aspect-ratio: 72/72;
   border-radius: 50%;
   border: .3125rem solid #3c3d1c;
   opacity: 0;
@@ -671,9 +670,6 @@ body {
     -webkit-column-gap: 2.5rem;
     -moz-column-gap: 2.5rem;
     column-gap: 2.5rem
-  }
-  .menu__link {
-    font-size: 1rem
   }
   .footer {
     padding-top: 1.5625rem
@@ -824,6 +820,9 @@ body {
   .contacts__item {
     width: 5.5rem
   }
+  .contacts__item {
+    height: 5.5rem
+  }
   .contacts__link {
     padding-top: 1rem
   }
@@ -835,6 +834,11 @@ body {
   }
   .contacts__link {
     padding-left: 1rem
+  }
+}
+@media (min-width:90em) {
+  .menu__link {
+    font-size: 1.125rem
   }
 }
 @media (max-width:20em) {
@@ -866,9 +870,6 @@ body {
     -webkit-column-gap: .9375rem;
     -moz-column-gap: .9375rem;
     column-gap: .9375rem
-  }
-  .menu__link {
-    font-size: .875rem
   }
   .footer {
     padding-top: .9375rem
@@ -1018,6 +1019,9 @@ body {
   }
   .contacts__item {
     width: 4.625rem
+  }
+  .contacts__item {
+    height: 4.625rem
   }
   .contacts__link {
     padding-top: .625rem
@@ -1178,9 +1182,6 @@ body {
     -moz-column-gap: clamp(.9375rem ,.3693181818rem + 2.8409090909vw ,2.5rem);
     column-gap: clamp(.9375rem ,.3693181818rem + 2.8409090909vw ,2.5rem)
   }
-  .menu__link {
-    font-size: clamp(.875rem ,.8295454545rem + .2272727273vw ,1rem)
-  }
   .footer {
     padding-top: clamp(.9375rem ,.7102272727rem + 1.1363636364vw ,1.5625rem)
   }
@@ -1330,6 +1331,9 @@ body {
   .contacts__item {
     width: clamp(4.625rem ,4.3068181818rem + 1.5909090909vw ,5.5rem)
   }
+  .contacts__item {
+    height: clamp(4.625rem ,4.3068181818rem + 1.5909090909vw ,5.5rem)
+  }
   .contacts__link {
     padding-top: clamp(.625rem ,.4886363636rem + .6818181818vw ,1rem)
   }
@@ -1341,6 +1345,11 @@ body {
   }
   .contacts__link {
     padding-left: clamp(.625rem ,.4886363636rem + .6818181818vw ,1rem)
+  }
+}
+@media (min-width:30em)and (max-width:90em) {
+  .menu__link {
+    font-size: clamp(1rem ,.9375rem + .2083333333vw ,1.125rem)
   }
 }
 @media (any-hover:hover) {

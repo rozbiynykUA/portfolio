@@ -588,6 +588,7 @@ body {
   justify-content: center
 }
 .contacts__item {
+  max-width: 5.5rem;
   flex-basis: 25%;
   border-radius: 50%;
   border: .3125rem solid #3c3d1c;

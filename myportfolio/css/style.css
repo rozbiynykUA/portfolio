@@ -593,6 +593,7 @@ body {
   justify-content: center
 }
 .contacts__item {
+  aspect-ratio: 72/72;
   border-radius: 50%;
   border: .3125rem solid #3c3d1c;
   opacity: 0;

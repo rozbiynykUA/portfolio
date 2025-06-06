@@ -419,8 +419,8 @@ body {
 .item-criteria__icon img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover
+  -o-object-fit: contain;
+  object-fit: contain
 }
 .item-criteria__label {
   text-align: center;
@@ -634,8 +634,8 @@ body {
 .contacts__link img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
   will-change: transform;
   transition: -webkit-transform .4s;
   transition: transform .4s;

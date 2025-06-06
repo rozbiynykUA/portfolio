@@ -405,7 +405,7 @@ body {
 }
 .item-criteria__icon {
   width: 4.5rem;
-  aspect-ratio: 72/72;
+  height: 4.5rem;
   flex-shrink: 0;
   flex-grow: 0;
   display: flex;
@@ -621,7 +621,7 @@ body {
 }
 .contacts__link {
   width: 100%;
-  aspect-ratio: 72/72;
+  height: 100%;
   flex-shrink: 0;
   flex-grow: 0;
   display: flex;

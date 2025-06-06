@@ -406,11 +406,6 @@ body {
 .item-criteria__icon {
   width: 4.5rem;
   height: 4.5rem;
-  flex-shrink: 0;
-  flex-grow: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1rem;
   border-radius: 50%;
   background-color: #5c543c;
@@ -593,6 +588,7 @@ body {
   justify-content: center
 }
 .contacts__item {
+  flex-basis: 25%;
   border-radius: 50%;
   border: .3125rem solid #3c3d1c;
   opacity: 0;
@@ -622,11 +618,6 @@ body {
 .contacts__link {
   width: 100%;
   height: 100%;
-  flex-shrink: 0;
-  flex-grow: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   background-color: #5c543c;
   box-shadow: .375rem .375rem .75rem #bda36a,-.375rem -.375rem .75rem #bda36a
@@ -816,12 +807,6 @@ body {
   }
   .contacts__list {
     gap: 1.875rem
-  }
-  .contacts__item {
-    width: 5.5rem
-  }
-  .contacts__item {
-    height: 5.5rem
   }
   .contacts__link {
     padding-top: 1rem
@@ -1016,12 +1001,6 @@ body {
   }
   .contacts__list {
     gap: .625rem
-  }
-  .contacts__item {
-    width: 4.625rem
-  }
-  .contacts__item {
-    height: 4.625rem
   }
   .contacts__link {
     padding-top: .625rem
@@ -1327,12 +1306,6 @@ body {
   }
   .contacts__list {
     gap: clamp(.625rem ,.1704545455rem + 2.2727272727vw ,1.875rem)
-  }
-  .contacts__item {
-    width: clamp(4.625rem ,4.3068181818rem + 1.5909090909vw ,5.5rem)
-  }
-  .contacts__item {
-    height: clamp(4.625rem ,4.3068181818rem + 1.5909090909vw ,5.5rem)
   }
   .contacts__link {
     padding-top: clamp(.625rem ,.4886363636rem + .6818181818vw ,1rem)

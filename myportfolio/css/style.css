@@ -336,7 +336,7 @@ body {
   aspect-ratio: 30/40;
   border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
   box-shadow: .375rem .375rem .75rem #bda36a,-.375rem -.375rem .75rem #bda36a;
-  border: .625rem solid #3c3d1c;
+  border: .125rem solid #3c3d1c;
   overflow: hidden;
   opacity: 0;
   -webkit-transform: translate(-50%,0);
@@ -396,9 +396,9 @@ body {
   opacity: 1
 }
 .item-criteria {
-  border: .625rem solid #3c3d1c;
+  border: .125rem solid #3c3d1c;
   border-radius: .75rem;
-  box-shadow: .1875rem .1875rem .375rem #bda36a,-.1875rem -.1875rem .375rem #bda36a,inset 2px 2px 5px #bda36a,inset -3px -3px 7px #bda36a;
+  box-shadow: .1875rem .1875rem .375rem #bda36a,-.1875rem -.1875rem .375rem #bda36a;
   display: flex;
   flex-direction: column;
   align-items: center
@@ -552,7 +552,7 @@ body {
   flex-basis: 45%;
   border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
   box-shadow: .375rem .375rem .75rem #bda36a,-.375rem -.375rem .75rem #bda36a;
-  border: .625rem solid #3c3d1c;
+  border: .125rem solid #3c3d1c;
   overflow: hidden;
   opacity: 0;
   -webkit-transform: translate(50%,0);

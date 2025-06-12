@@ -1732,7 +1732,7 @@ body {
   .menu__body {
     position: fixed;
     width: 45%;
-    height: 100vh;
+    height: 100svh;
     right: -45%;
     top: 0;
     overflow: auto;
@@ -1883,7 +1883,7 @@ body {
   .menu__body {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     right: -100%;
     top: 0;
     overflow: auto;

@@ -2131,7 +2131,10 @@ body {
   .icon-menu::after,
   .icon-menu::before {
     content: "";
-    transition: all .3s ease 0s;
+    transition: width .3s,top .3s,bottom .3s,-webkit-transform .3s;
+    transition: width .3s,top .3s,transform .3s,bottom .3s;
+    transition: width .3s,top .3s,transform .3s,bottom .3s,-webkit-transform .3s;
+    transition-delay: 0s;
     right: 0;
     position: absolute;
     width: 100%;

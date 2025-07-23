@@ -547,40 +547,16 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  mix-blend-mode: color-dodge;
-  transition: opacity .8s,-webkit-transform .8s;
-  transition: transform .8s,opacity .8s;
-  transition: transform .8s,opacity .8s,-webkit-transform .8s;
-  will-change: transform;
-  -webkit-transform: translate(0,10%);
-  transform: translate(0,10%);
-  opacity: 0
+  mix-blend-mode: color-dodge
 }
 .hero__title:not(:last-child) {
   margin-bottom: .25rem
-}
-.hero__title._watcher-view {
-  -webkit-transform: translate(0,0);
-  transform: translate(0,0);
-  opacity: 1
 }
 .hero__text {
   font-family: Sahitya;
   text-transform: capitalize;
   line-height: 1.55;
-  color: #fff;
-  transition: opacity .8s .2s,-webkit-transform .8s .2s;
-  transition: transform .8s .2s,opacity .8s .2s;
-  transition: transform .8s .2s,opacity .8s .2s,-webkit-transform .8s .2s;
-  will-change: transform;
-  -webkit-transform: translate(0,10%);
-  transform: translate(0,10%);
-  opacity: 0
-}
-.hero__text._watcher-view {
-  -webkit-transform: translate(0,0);
-  transform: translate(0,0);
-  opacity: 1
+  color: #fff
 }
 .hero__link {
   text-transform: capitalize;
@@ -1574,40 +1550,6 @@ body {
 .swiper-button-lock {
   display: none!important
 }
-@media (min-width:29.875em) {
-  .image-hero__feather-01 {
-    -webkit-animation: down-01 10s linear infinite;
-    animation: down-01 10s linear infinite
-  }
-  .image-hero__feather-02 {
-    -webkit-animation: down-02 10s linear infinite;
-    animation: down-02 10s linear infinite
-  }
-  .image-hero__feather-03 {
-    -webkit-animation: down-03 9s linear infinite;
-    animation: down-03 9s linear infinite
-  }
-  .image-hero__feather-04 {
-    -webkit-animation: down-04 8s linear infinite;
-    animation: down-04 8s linear infinite
-  }
-  .image-hero__feather-05 {
-    -webkit-animation: down-05 15s linear infinite;
-    animation: down-05 15s linear infinite
-  }
-  .image-hero__feather-06 {
-    -webkit-animation: down-06 15s linear infinite;
-    animation: down-06 15s linear infinite
-  }
-  .image-hero__feather-07 {
-    -webkit-animation: down-07 18s linear infinite;
-    animation: down-07 18s linear infinite
-  }
-  .image-hero__feather-08 {
-    -webkit-animation: down-08 9s linear infinite;
-    animation: down-08 9s linear infinite
-  }
-}
 @media (min-width:83.875em) {
   .link-button__text {
     font-size: .9375rem
@@ -1829,6 +1771,40 @@ body {
   }
   .form-subscribe__input::placeholder {
     font-size: 1.5rem
+  }
+}
+@media (min-width:62em) {
+  .image-hero__feather-01 {
+    -webkit-animation: down-01 10s linear infinite;
+    animation: down-01 10s linear infinite
+  }
+  .image-hero__feather-02 {
+    -webkit-animation: down-02 10s linear infinite;
+    animation: down-02 10s linear infinite
+  }
+  .image-hero__feather-03 {
+    -webkit-animation: down-03 9s linear infinite;
+    animation: down-03 9s linear infinite
+  }
+  .image-hero__feather-04 {
+    -webkit-animation: down-04 8s linear infinite;
+    animation: down-04 8s linear infinite
+  }
+  .image-hero__feather-05 {
+    -webkit-animation: down-05 15s linear infinite;
+    animation: down-05 15s linear infinite
+  }
+  .image-hero__feather-06 {
+    -webkit-animation: down-06 15s linear infinite;
+    animation: down-06 15s linear infinite
+  }
+  .image-hero__feather-07 {
+    -webkit-animation: down-07 18s linear infinite;
+    animation: down-07 18s linear infinite
+  }
+  .image-hero__feather-08 {
+    -webkit-animation: down-08 9s linear infinite;
+    animation: down-08 9s linear infinite
   }
 }
 @media (max-width:20em) {
@@ -2084,6 +2060,30 @@ body {
   }
 }
 @media (max-width:61.99875em) {
+  .image-hero__feather-01 {
+    display: none
+  }
+  .image-hero__feather-02 {
+    display: none
+  }
+  .image-hero__feather-03 {
+    display: none
+  }
+  .image-hero__feather-04 {
+    display: none
+  }
+  .image-hero__feather-05 {
+    display: none
+  }
+  .image-hero__feather-06 {
+    display: none
+  }
+  .image-hero__feather-07 {
+    display: none
+  }
+  .image-hero__feather-08 {
+    display: none
+  }
   .subscribe__content {
     width: 60%
   }

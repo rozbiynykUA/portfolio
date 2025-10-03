@@ -788,9 +788,9 @@ body {
   -webkit-transform: translate(-20%,0);
   transform: translate(-20%,0);
   opacity: 0;
-  transition: opacity 1.5s 1.5s,-webkit-transform 1.5s 1.5s;
-  transition: transform 1.5s 1.5s,opacity 1.5s 1.5s;
-  transition: transform 1.5s 1.5s,opacity 1.5s 1.5s,-webkit-transform 1.5s 1.5s;
+  transition: opacity 1.5s 1.2s,-webkit-transform 1.5s 1.2s;
+  transition: transform 1.5s 1.2s,opacity 1.5s 1.2s;
+  transition: transform 1.5s 1.2s,opacity 1.5s 1.2s,-webkit-transform 1.5s 1.2s;
   will-change: transform
 }
 .image-easy__greece._watcher-view {
@@ -809,9 +809,9 @@ body {
   -webkit-transform: translate(20%,0);
   transform: translate(20%,0);
   opacity: 0;
-  transition: opacity 1.5s 1.5s,-webkit-transform 1.5s 1.5s;
-  transition: transform 1.5s 1.5s,opacity 1.5s 1.5s;
-  transition: transform 1.5s 1.5s,opacity 1.5s 1.5s,-webkit-transform 1.5s 1.5s;
+  transition: opacity 1.5s 1.2s,-webkit-transform 1.5s 1.2s;
+  transition: transform 1.5s 1.2s,opacity 1.5s 1.2s;
+  transition: transform 1.5s 1.2s,opacity 1.5s 1.2s,-webkit-transform 1.5s 1.2s;
   will-change: transform
 }
 .image-easy__rome._watcher-view {
@@ -828,9 +828,9 @@ body {
   -webkit-transform: scale(0);
   transform: scale(0);
   opacity: 0;
-  transition: opacity 1.5s 1.8s,-webkit-transform 1.5s 1.8s;
-  transition: transform 1.5s 1.8s,opacity 1.5s 1.8s;
-  transition: transform 1.5s 1.8s,opacity 1.5s 1.8s,-webkit-transform 1.5s 1.8s;
+  transition: opacity 1.5s 1.5s,-webkit-transform 1.5s 1.5s;
+  transition: transform 1.5s 1.5s,opacity 1.5s 1.5s;
+  transition: transform 1.5s 1.5s,opacity 1.5s 1.5s,-webkit-transform 1.5s 1.5s;
   will-change: transform;
   -webkit-animation: knock 3s linear infinite;
   animation: knock 3s linear infinite
@@ -856,9 +856,9 @@ body {
   -webkit-transform: scale(0);
   transform: scale(0);
   opacity: 0;
-  transition: opacity 1.5s 2s,-webkit-transform 1.5s 2s;
-  transition: transform 1.5s 2s,opacity 1.5s 2s;
-  transition: transform 1.5s 2s,opacity 1.5s 2s,-webkit-transform 1.5s 2s;
+  transition: opacity 1.5s 1.6s,-webkit-transform 1.5s 1.6s;
+  transition: transform 1.5s 1.6s,opacity 1.5s 1.6s;
+  transition: transform 1.5s 1.6s,opacity 1.5s 1.6s,-webkit-transform 1.5s 1.6s;
   will-change: transform;
   -webkit-animation: knock 5s linear infinite;
   animation: knock 5s linear infinite

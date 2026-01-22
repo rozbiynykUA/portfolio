@@ -144,7 +144,7 @@ h6 {
   aspect-ratio: 68/45;
   background: url(../img/icons/faq-vector.svg) center/100% no-repeat;
   flex-shrink: 0;
-  transition: background .4s
+  transition: background .4s,width .4s
 }
 .spollers__title::-webkit-details-marker,
 .spollers__title::marker {
@@ -154,6 +154,14 @@ h6 {
   color: var(--text-acent)
 }
 ._spoller-init .spollers__title._spoller-active::before {
+  background: url(../img/icons/faq-vector-hover.svg) center/100% no-repeat
+}
+.spollers__title:focus,
+.spollers__title:focus-visible {
+  color: var(--text-acent)
+}
+.spollers__title:focus-visible::before,
+.spollers__title:focus::before {
   background: url(../img/icons/faq-vector-hover.svg) center/100% no-repeat
 }
 .spollers__body {
